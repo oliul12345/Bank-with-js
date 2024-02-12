@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl font-bold text-center mt-5">Lets some <span class="text-red-600">Money ...........</span></h1>
+    <main class="max-w-6xl mx-auto mt-16">
+        <div class="grid md:grid-cols-3 gap-4">
+            <div class="bg-green-500 py-4 px-4 rounded-xl text-white">
+                <p class="text-3xl">Deposit</p>
+                <p class="text-5xl">$<span id="bank-deposit">00</span></p>
+            </div>
+            <div class="bg-blue-500 py-4 px-4 rounded-xl text-white">
+                <p class="text-3xl">Withdraw</p>
+                <p class="text-5xl">$<span id="bank-withdraw">00</span></p>
+            </div>
+            <div class="bg-yellow-500 py-4 px-4 rounded-xl text-white">
+                <p class="text-3xl">Balance</p>
+                <p class="text-5xl">$<span id="balance-text">1250</span></p>
+            </div>
+        </div>
+        <div class="md:flex gap-4 mt-16">
+            <div class="bg-sky-500 w-full p-6 rounded-xl mt-3">
+                <p class="text-3xl text-white">Please deposit</p>
+                <input id="deposit-input" class="py-2 w-full mt-3 rounded-xl" type="text">
+                <button id="deposit-btn" class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-500 hover:to-blue-600 text-white font-bold py-2 px-4 rounded mt-5">
+                    Deposit
+                  </button>
+            </div>
+            <div class="bg-pink-500 w-full p-6 rounded-xl mt-3">
+                <p class="text-3xl text-white">Please Withdraw</p>
+                <input id="withdraw-input" class="py-2 w-full mt-3 rounded-xl" type="text">
+                <button id="withdraw-btn" class="bg-gradient-to-r from-red-500 to-purple-600 hover:from-purple-500 hover:to-blue-600 text-white font-bold py-2 px-4 rounded mt-5">
+                    Withdraw
+                  </button>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="bankWork.js"></script>
+</body>
+</html>
